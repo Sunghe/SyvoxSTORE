@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syvox Store — Official Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo">SYVOX<span>STORE</span></div>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="store.html" class="active">Store</a></li>
+      <li><a href="index.html#rules">Rules</a></li>
+      <li><a href="store.html">Cart</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="store-hero">
+  <h1>Official <span class="accent">Syvox</span> Store</h1>
+  <p>We offer in-game ranks, crate keys, kits and more!</p>
+</section>
+
+<main class="store">
+
+  <h2 class="category-title">⭐ Ranks</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="badge">POPULAR</div>
+      <h3>VIP Rank</h3>
+      <p class="desc">Colored name, /fly in lobby, 2 set-homes, VIP chat prefix.</p>
+      <p class="price">$4.99</p>
+      <button class="btn primary add-cart" data-name="VIP Rank" data-price="4.99">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <div class="badge">HOT</div>
+      <h3>MVP Rank</h3>
+      <p class="desc">Everything in VIP + /feed, /heal, 5 set-homes, MVP prefix.</p>
+      <p class="price">$9.99</p>
+      <button class="btn primary add-cart" data-name="MVP Rank" data-price="9.99">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h3>Legend Rank</h3>
+      <p class="desc">Everything in MVP + /god, custom join message, 10 set-homes.</p>
+      <p class="price">$19.99</p>
+      <button class="btn primary add-cart" data-name="Legend Rank" data-price="19.99">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <h2 class="category-title">🗝️ Crate Keys</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Common Crate Key ×5</h3>
+      <p class="desc">5 keys for the Common Crate. Gear, XP and surprises inside!</p>
+      <p class="price">$2.49</p>
+      <button class="btn primary add-cart" data-name="Common Crate Key x5" data-price="2.49">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <div class="badge">BEST VALUE</div>
+      <h3>Rare Crate Key ×10</h3>
+      <p class="desc">10 rare keys with better loot: enchanted gear and rare blocks.</p>
+      <p class="price">$7.99</p>
+      <button class="btn primary add-cart" data-name="Rare Crate Key x10" data-price="7.99">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h3>Legendary Crate Key ×3</h3>
+      <p class="desc">Top-tier loot. Custom enchants, spawners and more.</p>
+      <p class="price">$9.99</p>
+      <button class="btn primary add-cart" data-name="Legendary Crate Key x3" data-price="9.99">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <h2 class="category-title">🎁 Kits & Bundles</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Starter Kit</h3>
+      <p class="desc">Full iron set, tools, food and 500 coins to start your adventure.</p>
+      <p class="price">$1.99</p>
+      <button class="btn primary add-cart" data-name="Starter Kit" data-price="1.99">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <div class="badge">BUNDLE</div>
+      <h3>MVP + 10 Rare Keys</h3>
+      <p class="desc">MVP rank plus 10 rare crate keys. Everything you need to dominate.</p>
+      <p class="price">$14.99 <s>$17.98</s></p>
+      <button class="btn primary add-cart" data-name="MVP + 10 Rare Keys" data-price="14.99">Add to Cart</button>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- Cart -->
+<section id="cart" class="cart-panel">
+  <h2>🛒 Your Cart</h2>
+  <ul id="cart-items"></ul>
+  <p id="cart-total">Total: $0.00</p>
+  <button id="checkout" class="btn primary">Checkout</button>
+  <p class="cart-note">Checkout links to your payment provider (Tebex) — connect one to accept real payments.</p>
+</section>
+
+<footer>
+  <p>© 2026 Syvox Store — Not affiliated with Mojang AB.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
